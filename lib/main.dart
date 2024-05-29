@@ -5,7 +5,6 @@ import 'package:hive_flutter/hive_flutter.dart';
 
 import 'navigators/app_pages.dart';
 
-
 void main() async {
   try {
     WidgetsFlutterBinding.ensureInitialized();
@@ -16,10 +15,7 @@ void main() async {
   } catch (exception) {}
 }
 
-Future<void> initServices() async {
-  
- 
-}
+Future<void> initServices() async {}
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -36,6 +32,7 @@ class MyApp extends StatelessWidget {
         return GetMaterialApp(
           scrollBehavior: MyBehavior(),
           debugShowCheckedModeBanner: false,
+          theme: ThemeData.dark(),
           themeMode: ThemeMode.dark,
           getPages: AppPages.pages,
           initialRoute: AppPages.initial,

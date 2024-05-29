@@ -29,7 +29,7 @@ class AppPages {
       binding: HomeBinding(),
     ),
     GetPage<LoginScreen>(
-        name: Routes.home,
+        name: Routes.login,
         page: LoginScreen.new,
         transition: Transition.fadeIn,
         binding: LoginBinding(),

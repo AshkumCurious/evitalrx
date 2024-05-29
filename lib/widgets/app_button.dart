@@ -13,7 +13,7 @@ class AppButton {
         onPressed: onPressed,
         style: FilledButton.styleFrom(
           textStyle: AppTextStyles.buttonText,
-          backgroundColor: AppColors.primaryRed,
+          backgroundColor: AppColors.primaryYellow,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(5.r), // border radius
           ),
